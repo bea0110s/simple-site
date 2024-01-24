@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#box1 {
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#none {
+    text-decoration: none;
+    color: black;
+}
+
+#none2 {
+    text-decoration: none;
+    color: rgb(32, 115, 240);
+}
+
+#font1 {
+    font-size: small;
+}
+
+#container1 {
+    width: 1000px;
+    margin-left: 400px;
+    margin-right: px;
+}
+
+#box2 {
+    text-align: center;
+}
+
+#box3 {
+    border: 1px solid rgb(94, 94, 94);
+    margin-left: 900px;
+    margin-top: 10px;
+}
+
+#box4 {
+    text-align: center;
+}
