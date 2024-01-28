@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            td {
+                width: 200px;
+            }
+
+            #box1 {
+                margin: 20px;
+                padding: 2px;
+                border: 1px solid black;
+                width: 300px;
+                height: 400px;
+                float: left;
+                position: relative;
+            }
+
+            #box2 {
+                margin: 20px;
+                padding: 2px;
+                border: 1px solid black;
+                width: 300px;
+                height: 400px;
+                float: left;
+                position: relative 20%;
+            }
+
+            #belgium {
+                width: 200px;
+                height: 200px;
+                background: repeating-linear-gradient(
+                    to right,
+                    black,
+                    black 100px,
+                    #fdda25 100px,
+                    #fdda25 200px,
+                    #ef3340 200px,
+                    #ef3340 300px
+                );
+            }
+            #us1 {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                background: repeating-linear-gradient(
+                    to top,
+                    #b31942,
+                    #b31942 7.2%,
+                    white 7.2%,
+                    white 14.4%
+                );
+            }
+            #us2 {
+                width: 120px;
+                height: 102px;
+                background-color: #0a3161;
+                position: relative;
+                left: -2px;
+                bottom: 37px;
+                color: white;
+                text-align: center;
+                font-size: 8.5px;
+                letter-spacing: 10px;
+                padding-left: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="box1">
+            <caption>
+                벨기에 국기
+            </caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <img
+                            src="static/img/belgium.jpg"
+                            alt="벨기에 국기"
+                            width="300px"
+                            height="200px"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="belgium"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="box2">
+            <caption>
+                성조기
+            </caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <img
+                            src="static/img/us.png"
+                            alt="성조기"
+                            width="300px"
+                            height="200px"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="us1">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="us2">
+                                        ★★★★★★
+                                        <br />
+                                        ★★★★★
+                                        <br />
+                                        ★★★★★★
+                                        <br />
+                                        ★★★★★
+                                        <br />
+                                        ★★★★★★
+                                        <br />
+                                        ★★★★★
+                                        <br />
+                                        ★★★★★★
+                                        <br />
+                                        ★★★★★
+                                        <br />
+                                        ★★★★★★
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
