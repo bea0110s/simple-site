@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/user-reg.css" />
+    </head>
+    <body>
+        <div>
+            <form action="#" id="container1" method="get">
+                <fieldset>
+                    <legend>로그인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="userid">아이디</label>
+                            <input
+                                type="text"
+                                name="userid"
+                                id="userid"
+                                required
+                                autofocus
+                            />
+                        </li>
+                        <li>
+                            <label for="userpw">비밀번호</label>
+                            <input
+                                type="password"
+                                name="userpw"
+                                id="userpw"
+                                required
+                                autofocus
+                            />
+                        </li>
+                        <li>
+                            <label for="userpw">비밀번호 확인</label>
+                            <input
+                                type="password"
+                                name="userpw"
+                                id="userpw"
+                                required
+                                autofocus
+                            />
+                        </li>
+                        <li>
+                            <label for="grade">회원등급</label>
+                            <input
+                                type="text"
+                                name="grade"
+                                id="grade"
+                                value="준회원"
+                                readonly
+                                style="border: none"
+                            />
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <ul>
+                        <li>
+                            <label for="username">이름</label>
+                            <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                maxlength="5"
+                                placeholder="5자미만 공백없이"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="usermail">메일 주소</label>
+                            <input
+                                type="text"
+                                name="usermail"
+                                id="usermail"
+                                placeholder="abcd@domain.com"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="userphone">연락처</label>
+                            <input
+                                type="text"
+                                name="userphone"
+                                id="userphone"
+                                required
+                            />
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset position="3">
+                    <input type="submit" name="" id="submit1" value="제출" />
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
