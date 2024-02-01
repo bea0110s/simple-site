@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 1600px;
+    margin: 70px auto;
+}
+
+nav > #gnb {
+    width: 1600px;
+    height: 70px;
+    list-style-type: none;
+}
+
+nav > #gnb > li {
+    float: left;
+    background-color: white;
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 10px 20px;
+}
+
+#gnb > li > a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+
+    transition-property: text-decoration;
+}
+
+#gnb > li:first-child {
+    padding-top: 18px;
+    height: 62px;
+}
+
+#gnb > li:first-child > a:active {
+    border: 1px dashed black;
+    border-width: 3px;
+    height: 53px;
+}
+
+#gnb > li > a:hover {
+    text-decoration: underline 7px rgb(255, 217, 0);
+}
+
+#snb1 > #box1 > li {
+    background-color: white;
+}
+#snb2 > #box2 > li {
+    background-color: white;
+}
+#snb1 > li > a {
+    font-size: 15px;
+    color: #777777;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 2px;
+}
+
+#snb2 > li > a {
+    font-size: 15px;
+    color: #777777;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 2px;
+}
+#snb1 > li > a:hover {
+    color: rgb(124, 124, 243);
+    text-decoration: underline;
+}
+#snb2 > li > a:hover {
+    color: rgb(124, 124, 243);
+    text-decoration: underline;
+}
+
+#box1 > a {
+    background-color: #eee;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 13px;
+    display: block;
+}
+#box2 > a {
+    background-color: #eee;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 13px;
+    display: block;
+}
+
+#box1 > a:hover {
+    background-color: rgb(33, 33, 150);
+    color: white;
+}
+
+#box2 > a:hover {
+    background-color: rgb(33, 33, 150);
+    color: white;
+}
+
+#snb1 {
+    list-style-type: none;
+
+    display: block;
+    width: 220px;
+    float: left;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#snb2 {
+    list-style-type: none;
+
+    width: 220px;
+    padding-left: 20px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#gnb > li:nth-child(2):hover > #snb1 {
+    display: block;
+    max-height: 300px;
+}
+
+#gnb > li:nth-child(2):hover > #snb2 {
+    display: block;
+    max-height: 300px;
+}
