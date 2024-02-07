@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            :root {
+                --boxw: 600;
+                --boxh: 400;
+                --radius: 40;
+                --wcount: 8;
+                --hcount: 3;
+            }
+            #container {
+                width: calc(var(--boxw) * 1px);
+                height: calc(var(--boxh) * 1px);
+                margin: 50px auto;
+                background-color: white;
+                border: 1px solid black;
+                position: relative;
+            }
+            .circle {
+                width: calc(var(--radius) * 2px);
+                height: calc(var(--radius) * 2px);
+                border: 1px solid black;
+                border-radius: 50%;
+                position: absolute;
+                top: 0px;
+                left: calc((calc(var(--boxw) / 2) - calc(var(--radius))) * 1px);
+                transform: rotate(
+                    calc(var(--dir) * calc(calc(360 / var(--wcount)) * 1deg))
+                );
+                transform-origin: calc(var(--radius) * 1px)
+                    calc(calc(var(--boxw) / 2) * 1px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="circle" style="--dir: 0"></div>
+            <div class="circle" style="--dir: 1"></div>
+            <div class="circle" style="--dir: 2"></div>
+            <div class="circle" style="--dir: 3"></div>
+            <div class="circle" style="--dir: 4"></div>
+            <div class="circle" style="--dir: 5"></div>
+            <div class="circle" style="--dir: 6"></div>
+            <div class="circle" style="--dir: 7"></div>
+            <div class="circle" style="--dir: 8"></div>
+            <div class="circle" style="--dir: 9"></div>
+        </div>
+    </body>
+</html>
