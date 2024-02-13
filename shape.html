@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #hexagon {
+                width: 100px;
+                height: 57.735px;
+                background-color: dodgerblue;
+                margin: 20% auto;
+
+                position: relative;
+            }
+            #hexagon::before {
+                display: block;
+                content: "";
+                width: 100px;
+                height: 57.735px;
+                background-color: dodgerblue;
+                margin: 20% auto;
+
+                position: absolute;
+                top: -20px;
+
+                transform: rotate(60deg);
+            }
+            #hexagon::after {
+                display: block;
+                content: "";
+                width: 100px;
+                height: 57.735px;
+                background-color: dodgerblue;
+                margin: 20% auto;
+
+                position: absolute;
+                top: -20px;
+
+                transform: rotate(120deg);
+            }
+            #pentagon {
+                width: 100px;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid dodgerblue;
+
+                margin: 20% auto;
+                display: block;
+
+                position: relative;
+            }
+            #pentagon::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 90px solid dodgerblue;
+
+                margin: 20% auto;
+                display: block;
+
+                position: absolute;
+                top: -210px;
+                left: -50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hexagon"></div>
+        <div id="pentagon"></div>
+    </body>
+</html>
